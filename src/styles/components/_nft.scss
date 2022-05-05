@@ -1,0 +1,127 @@
+.nft__containerCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: $main;
+}
+.nft__containerCard2{
+    background-color: $cardBg;
+    box-shadow: 0px 3px $line;
+    border-radius: 2px;
+    padding: 20px;
+    width: auto;
+}
+
+.nft__imageCard{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 45vh;
+    height: 45vh;
+    background-size: cover;
+    background-image: url("../../images/image-equilibrium.jpg");
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-sizing:border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+            background-image: linear-gradient(
+            rgb(0, 255, 242, 0.5), 
+            rgb(0, 217, 255, 0.5)
+        ),
+    url("../../images/image-equilibrium.jpg"); 
+        opacity: 0.5;
+        .nft__iconView{
+            visibility: visible;
+            
+        }
+    }
+}
+
+.nft__iconView{
+    width: 50px;
+    height: 50px;
+    visibility: hidden;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+}
+
+.nft__h1{
+    font-size: 20px;
+    color: $white;
+    padding-bottom: 20px;
+    cursor: pointer;
+    &:hover{
+        color: $secondary;
+    }
+}
+.nft__text{
+    color: $primary;
+    padding-bottom: 20px;
+}
+.nft__containerData{
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.nft__dataLeft{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.nft__dataRight{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.nft__textLeft{
+    color: $secondary;
+}
+.nft__textRight{
+    color: $primary;
+}
+.nft__iconLeft{
+    margin-right: 6px;
+    width: 10px;
+    height: 15px;
+}
+.nft__iconRight{
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+}
+.nft_footerCard{
+    border-top: 1px solid $primary;
+    padding-top: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.nft__iconFooter{
+    width: 5vh;
+    height: 5vh;
+    margin-right: 10px;
+    border: 1.5px solid white;
+    border-radius: 50px;
+}
+.nft__footerText, .nft__footerText span{
+    font-size:medium;
+    color: $primary;
+}
+.nft__footerText span{
+    color: $white;
+    cursor: pointer;
+    &:hover{
+        color: $secondary;
+    }
+}
